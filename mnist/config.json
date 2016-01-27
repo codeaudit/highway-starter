@@ -1,0 +1,5 @@
+{
+  "name": "mnist",
+  "version": "0.0.1",
+  "file": "mnist.hdf5"
+}
