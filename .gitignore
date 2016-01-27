@@ -1,0 +1,7 @@
+.DS_Store
+*.pyc
+.env/
+.ipynb_checkpoints/
+highway_fcn/models/
+mnist/data
+mnist/mnist.hdf5
