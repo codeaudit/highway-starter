@@ -1,23 +1,32 @@
 {
-  "name": "",
+  "name": "highway",
   "version": "0.0.1",
   "file": "models/highway.pb",
   "options": {
 
     "datasets": {
-      "mnist": "0.0.1"
+      "fomoro/mnist": "0.0.1"
     },
 
-    "batch_size": 50,
     "epochs": 2000,
     "checkpoint_interval": 100,
+    "batch_size": 50,
 
-    "train_feed_dict": { "x": "x", "y": "y_" },
-    "validation_feed_dict": { "x": "x", "y": "y_" },
-    "test_feed_dict": { "x": "x", "y": "y_" },
+    "train_feed_dict": {
+      "x": "<-x",
+      "y_": "<-y"
+    },
+    "validation_feed_dict": {
+      "x": "<-x",
+      "y_": "<-y"
+    },
+    "test_feed_dict": {
+      "x": "<-x",
+      "y_": "<-y",
+    },
 
-    "train_ops": { "train": "train/train_step" },
-    "validation_ops": { "cost": "test/accuracy" },
-    "test_ops": { "cost": "test/accuracy" }
+    "train_ops": { "train<-": "train/train_step" },
+    "validation_ops": { "cost<-": "test/accuracy" },
+    "test_ops": { "cost<-": "test/accuracy" }
   }
 }
