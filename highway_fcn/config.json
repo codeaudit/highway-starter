@@ -9,7 +9,7 @@
     },
 
     "epochs": 2000,
-    "checkpoint_interval": 100,
+    "checkpoint_interval": 200,
     "batch_size": 50,
 
     "train_feed_dict": {
@@ -22,7 +22,7 @@
     },
     "test_feed_dict": {
       "x": "<-x",
-      "y_": "<-y",
+      "y_": "<-y"
     },
 
     "train_ops": { "train<-": "train/train_step" },
